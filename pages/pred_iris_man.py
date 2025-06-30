@@ -3,17 +3,17 @@ import pandas as pd
 from utils import predict_flores
 
 # Título de la aplicación
-st.title('Predicción manual de flores')
-st.image('iris.jpg', caption='Imagen de iris', use_column_width=True)
+st.title('Predicción en base al zodiaco (manualmente)')
+st.image('Signo.jpeg', caption='Imagen de signo', use_column_width=True)
 
 # Texto introductorio
-st.write('**Ingresa los datos manualmente para realizar la predicción de la flor:**')
+st.write('**Ingresa los datos manualmente para realizar la predicción de signo:**')
 
 # Diccionario para almacenar los datos de entrada
 input_data = {}
 
-# Lista de columnas para las características de la flor
-columns = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+# Lista de columnas para las características de signo
+columns = ['fuego', 'tierra', 'aire', 'agua']
 
 # Bucle para recorrer las columnas y obtener los datos de entrada
 for col in columns:

@@ -2,11 +2,11 @@ import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
 
 def main():
-    st.title('Bienvenido al portal predictivo de la empresa XYZ')
+    st.title('Bienvenido a tu guía virtual para alinear tus Chakras')
     st.write('**Por favor seleccione el servicio predictivo que desea utilizar**')
     
     opcion = st.radio('Seleccione el servicio:', 
-                      ('Predicción del tipo de flor (con CSV)', 'Predicción del tipo de flor (manualmente)', 'Predicción de imagen','Maqueta','Sliders'), 
+                      ('Predicción en base al zodiaco (csv)', 'Predicción en base al zodiaco (manualmente)', 'Predicción de imagen','Maqueta','Sliders'), 
                       index=0, 
                       key='option')
     
@@ -14,9 +14,9 @@ def main():
         route_prediction(opcion)
 
 def route_prediction(opcion):
-    if opcion == 'Predicción del tipo de flor (con CSV)':
+    if opcion == 'Predicción en base al zodiaco (csv)':
         switch_page("pred_iris_csv")
-    elif opcion == 'Predicción del tipo de flor (manualmente)':
+    elif opcion == 'Predicción en base al zodiaco (manualmente)':
         switch_page("pred_iris_man")
     elif opcion == 'Predicción de imagen':
         switch_page("pred_imagen")

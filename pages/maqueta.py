@@ -87,7 +87,7 @@ with tab3:
     st.subheader("Entendimiento visual")
     
     # Nuevo: Añadir un cargador de archivos para subir imágenes
-    uploaded_file = st.file_uploader("Subir una imagen", type=["jpg", "png"])
+    uploaded_file = st.file_uploader("Subir una imagen", type=["jpg", "jpeg", "png"])
     
     if uploaded_file is not None:
         st.image(uploaded_file, caption="Imagen cargada")
